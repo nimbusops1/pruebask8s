@@ -9,18 +9,18 @@ spec:
   - host: calculator.local
     http:
       paths:
-      - path: /api/sumar
+      - path: /api/register
         pathType: Prefix
         backend:
           service:
-            name: sumar-service
+            name: backend-service
             port:
               number: 80
-      - path: /api/multiplicar
+      - path: /api/login
         pathType: Prefix
         backend:
           service:
-            name: multiplicar-service
+            name: backend-service
             port:
               number: 80
       - path: /
